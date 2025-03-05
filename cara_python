@@ -1,0 +1,67 @@
+import pygame, sys
+
+WIDTH = 320
+HIGH = 240
+CAPTION_TEXT = "LOLA INDITEX"
+RED = (255,0,0)
+GREEN = (0,255,0)
+BLUE = (0,0,255)
+INDIGO = (75, 0, 130)
+ORANGE = (255, 165, 0)
+YELLOW = (255,255,0)
+VIOLET = (148,0,211)
+GREY = (128,128,128)
+MARRON = (128,0,0)
+BLACK = (0,0,0)
+OLIVE = (134,139,73)
+CYAN = (0,255,255)
+PINK = (255,153,204)
+MAGENTA = (255,0,255)
+TAN = (210,180,140)
+TEAL = (0,128,128)
+WHITE = (255,255,255)
+CAFE = (148,77,3)
+CAFE_OSCURO = (80,40,0)
+NEGRO = (50,50,50)
+VERDE_OSCURO = (45,87,44)
+color = TEAL
+import pygame, sys
+from pygame.locals import *
+
+pygame.init()
+pantalla = pygame.display.set_mode((800,600))
+pygame.display.set_caption('Rectangle')
+while True: # main game loop
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+
+    pantalla.fill(WHITE)
+
+    pygame.draw.ellipse(pantalla,BLACK,(345, 25, 110, 80))
+    pygame.draw.ellipse(pantalla,BLACK,(340, 13, 25, 100))
+    pygame.draw.ellipse(pantalla,BLACK,(435, 13, 25, 100))
+    pygame.draw.ellipse(pantalla,NEGRO,(325, 70, 150, 50))
+    pygame.draw.ellipse(pantalla,BLACK,(345, 0, 110, 50))
+    pygame.draw.circle(pantalla,CAFE, (400, 200), 120)
+    pygame.draw.circle(pantalla,CAFE, (310, 250), 50)
+    pygame.draw.circle(pantalla,CAFE, (490, 250), 50)
+    pygame.draw.ellipse(pantalla,CAFE,(300, 250, 200, 100))
+    pygame.draw.circle(pantalla,CAFE, (270, 125), 50)
+    pygame.draw.circle(pantalla,CAFE_OSCURO, (270, 125), 30)
+    pygame.draw.circle(pantalla,CAFE, (530, 125), 50)
+    pygame.draw.circle(pantalla,CAFE_OSCURO, (530, 125), 30)
+    pygame.draw.circle(pantalla,WHITE, (350, 200), 35)
+    pygame.draw.circle(pantalla,WHITE, (450, 200), 35)
+    pygame.draw.circle(pantalla,BLACK, (350, 200), 35, 5)
+    pygame.draw.circle(pantalla,BLACK, (450, 200), 35, 5)
+    pygame.draw.circle(pantalla,VERDE_OSCURO, (350, 200), 15)
+    pygame.draw.circle(pantalla,VERDE_OSCURO, (450, 200), 15)
+    pygame.draw.circle(pantalla,BLACK, (350, 200), 5)
+    pygame.draw.circle(pantalla,BLACK, (450, 200), 5)
+
+
+
+
+    pygame.display.update()
