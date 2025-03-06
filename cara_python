@@ -21,6 +21,7 @@ TAN = (210,180,140)
 TEAL = (0,128,128)
 WHITE = (255,255,255)
 CAFE = (148,77,3)
+NARANJA_INTENSO = (236,124,38)
 CAFE_OSCURO = (80,40,0)
 NEGRO = (50,50,50)
 VERDE_OSCURO = (45,87,44)
@@ -42,26 +43,56 @@ while True: # main game loop
     pygame.draw.ellipse(pantalla,BLACK,(345, 25, 110, 80))
     pygame.draw.ellipse(pantalla,BLACK,(340, 13, 25, 100))
     pygame.draw.ellipse(pantalla,BLACK,(435, 13, 25, 100))
+
     pygame.draw.ellipse(pantalla,NEGRO,(325, 70, 150, 50))
+
     pygame.draw.ellipse(pantalla,BLACK,(345, 0, 110, 50))
+
     pygame.draw.circle(pantalla,CAFE, (400, 200), 120)
     pygame.draw.circle(pantalla,CAFE, (310, 250), 50)
     pygame.draw.circle(pantalla,CAFE, (490, 250), 50)
     pygame.draw.ellipse(pantalla,CAFE,(300, 250, 200, 100))
     pygame.draw.circle(pantalla,CAFE, (270, 125), 50)
+
     pygame.draw.circle(pantalla,CAFE_OSCURO, (270, 125), 30)
     pygame.draw.circle(pantalla,CAFE, (530, 125), 50)
+
     pygame.draw.circle(pantalla,CAFE_OSCURO, (530, 125), 30)
+
     pygame.draw.circle(pantalla,WHITE, (350, 200), 35)
     pygame.draw.circle(pantalla,WHITE, (450, 200), 35)
-    pygame.draw.circle(pantalla,BLACK, (350, 200), 35, 5)
-    pygame.draw.circle(pantalla,BLACK, (450, 200), 35, 5)
+
     pygame.draw.circle(pantalla,VERDE_OSCURO, (350, 200), 15)
     pygame.draw.circle(pantalla,VERDE_OSCURO, (450, 200), 15)
+
+    pygame.draw.polygon(pantalla, CAFE, [(320, 195),(315, 162),(382, 162),(380, 195),(364, 190), (335, 190)])
+    pygame.draw.polygon(pantalla, CAFE, [(420, 195), (418, 162), (484, 162), (480, 195), (464, 190), (435, 190)])
+
     pygame.draw.circle(pantalla,BLACK, (350, 200), 5)
     pygame.draw.circle(pantalla,BLACK, (450, 200), 5)
+    pygame.draw.circle(pantalla,BLACK, (350, 200), 35, 5)
+    pygame.draw.circle(pantalla,BLACK, (450, 200), 35, 5)
 
 
+    pygame.draw.polygon(pantalla, BLACK, [(330, 140), (325, 120), (345,120 ), (375,130 ), (375,140), (350,137 )])
+    pygame.draw.polygon(pantalla, BLACK, [(470, 140), (475, 120), (455, 120), (425, 130), (425, 140), (450, 137)])
 
+    pygame.draw.ellipse(pantalla, NARANJA_INTENSO, (300, 225, 100, 70))
+    pygame.draw.ellipse(pantalla, NARANJA_INTENSO, (400, 225, 100, 70))
+    pygame.draw.ellipse(pantalla, NARANJA_INTENSO, (305, 249, 190, 50))
+    pygame.draw.ellipse(pantalla, NARANJA_INTENSO, (362, 225, 75, 25))
 
+    pygame.draw.ellipse(pantalla, BLACK, (362, 210, 75, 25))
+    pygame.draw.polygon(pantalla, BLACK, [(362, 222),(400,245),(436, 222)])
+
+    pygame.draw.circle(pantalla,BLACK, (340, 235), 2)
+    pygame.draw.circle(pantalla,BLACK, (330, 260), 2)
+    pygame.draw.circle(pantalla,BLACK, (320, 240), 2)
+
+    pygame.draw.circle(pantalla,BLACK, (460, 235), 2)
+    pygame.draw.circle(pantalla,BLACK, (470, 260), 2)
+    pygame.draw.circle(pantalla,BLACK, (480, 240), 2)
+
+    rectangle1 = pygame.Rect(400 , 225, 1, 75)
+    pygame.draw.rect(pantalla, BLACK, rectangle1)
     pygame.display.update()
